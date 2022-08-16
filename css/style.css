@@ -1,0 +1,296 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/montserrat-regular.woff2") format("woff2"),
+      url("/fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/montserrat-medium.woff2") format("woff2"),
+      url("/fonts/montserrat-medium.woff") format("woff");
+}
+
+
+/* Общие стили */
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: #e5e5e5;
+  color: #533738;
+  min-width: 1200px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #533738;
+}
+
+a:hover {
+  color: #cc8b86;
+}
+
+a:focus {
+  color: #99544f;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1036px;
+}
+
+.container-wide {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  padding: 26px 69px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border: 2px solid #cc8b86;
+  background-color: #cc8b86;
+}
+
+.button:hover,
+.button:focus {
+  border: 2px solid #99544f;
+  background-color: #e5e5e5;
+  color: #cc8b86;
+}
+
+.section-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Стили для Header */
+.logo {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.nav-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-header .phone {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Стили для блока Promo */
+.promo {
+  background-color: #e6e2d7;
+  background-image: url("../img/bg-promo.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-heading {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+}
+
+
+/* Стили для блока About */
+
+
+/* Стили для блока Advantages */
+.advantages {
+  color: #ffffff;
+  background-color: #8d7370;
+}
+
+.advantages-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.advantages-item span {
+  display: block;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 62px;
+}
+
+.advantages-item p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Стили для блока Works */
+
+.works-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.works-heading {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.more-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+}
+
+
+/* Стили для блока Team */
+.team {
+  background-color: #e2c4ba;
+}
+
+.team-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.process-list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  counter-reset: cnt;
+}
+
+.process-item::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  counter-increment: cnt;
+  content: counter(cnt);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #8d7370;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+
+/* Стили для блока Reviews */
+.reviews-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 68px;
+  height: 68px;
+  border: 2px solid #cc8b86;
+  border: none;
+  border-radius: 50%;
+  background-color: #cc8b86;
+}
+
+.reviews-button:hover {
+  background-color: #ffffff;
+}
+
+.reviews-button:hover path,
+.reviews-button:focus path {
+  fill: #cc8b86;
+}
+
+.reviews-button:focus {
+  border: 2px solid #cc8b86;
+  background-color: #ffffff;
+}
+
+.reviews-button-prev svg {
+  transform: rotate(180deg);
+}
+
+.reviews-author {
+  text-transform: uppercase;
+}
+
+.reviews-images img {
+  display: block;
+}
+
+
+/* Стили для блока Form */
+.form {
+  background-color: #8d7370;
+  color: #ffffff;
+}
+
+
+.text-input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.map {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Стили для Footer */
+.page-footer .phone {
+  font-size: 18px;
+  line-height: 30px;
+}
