@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Дизайн-студия Scandi</title>
   <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="https://бавлео подcdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
@@ -80,7 +83,7 @@
       <div class="container-wide">
         <h2 class="section-heading">Наши работы</h2>
         <div class="works-grid">
-          <article class="works-item">
+          <article class="works-item" tabindex="0">
             <img class="works-img" src="img/portfolio-1.jpg" width="488" height="451"
               alt="Интерьер с двухспальной кроватью и ширмой" />
             <div class="works-hover">
@@ -89,7 +92,7 @@
                 на&nbsp;отсылках к&nbsp;природе и&nbsp;сделали ребятам уютный интерьер, отсылающий к&nbsp;виллам островов Бали.</p>
             </div>
           </article>
-          <article class="works-item">
+          <article class="works-item" tabindex="0">
             <img class="works-img" src="img/portfolio-2.jpg" width="692" height="451"
               alt="Интерьер кухни с белой барной стойкой у которой стоят четыре деревянных табурета" />
             <div class="works-hover">
@@ -98,7 +101,7 @@
                 на&nbsp;отсылках к&nbsp;природе и&nbsp;сделали ребятам уютный интерьер, отсылающий к&nbsp;виллам островов Бали.</p>
             </div>
           </article>
-          <article class="works-item">
+          <article class="works-item" tabindex="0">
             <img class="works-img" src="img/portfolio-3.jpg" width="692" height="451"
               alt="Интерьер гостинной с светло-зелёным диваном и белым кофейным столиком" />
             <div class="works-hover">
@@ -107,7 +110,7 @@
                 на&nbsp;отсылках к&nbsp;природе и&nbsp;сделали ребятам уютный интерьер, отсылающий к&nbsp;виллам островов Бали.</p>
             </div>
           </article>
-          <article class="works-item">
+          <article class="works-item" tabindex="0">
             <img class="works-img" src="img/portfolio-4.jpg" width="488" height="451"
               alt="Интерьер ванной комнаты со стерыми стенами, пальмой и большой белой ванной в центре" />
             <div class="works-hover">
@@ -218,8 +221,7 @@
                   <p>&quot;Товарищи!</p>
                   <p>Новая модель организационной деятельности требуют определения и&nbsp;уточнения соответствующих условий
                     активизации.</p>
-                  <p>Таким образом новая модель организационной деятельности требуют от&nbsp;нас анализа новых предложений!»
-                  </p>
+                  <p>Таким образом новая модель организационной деятельности требуют от&nbsp;нас анализа новых предложений!&quot;</p>
                   <p class="reviews-author">Владимир Ульянов</p>
                 </div>
                 <div class="reviews-images">
@@ -231,18 +233,20 @@
               </article>
             </div>
           </div>
-          <button class="reviews-button reviews-button-prev" aria-label="Переключить на предыдущий слайд">
-            <svg height="16" viewBox="0 0 33 16" width="33" xmlns="http://www.w3.org/2000/svg">
-              <path d="m32.7071 8.70711c.3905-.39053.3905-1.02369 0-1.41422l-6.364-6.363958c-.3905-.390524-1.0236-.390524-1.4142 0-.3905.390528-.3905 1.023688 0 1.414218l5.6569 5.65685-5.6569 5.6569c-.3905.3905-.3905 1.0236 0 1.4142.3906.3905 1.0237.3905 1.4142 0zm-32.7071.29289h32v-2h-32z"
-                fill="#f5f2ed" />
-            </svg>
-          </button>
-          <button class="reviews-button reviews-button-next" aria-label="Переключить на следующий слайд">
-            <svg height="16" viewBox="0 0 33 16" width="33" xmlns="http://www.w3.org/2000/svg">
-              <path d="m32.7071 8.70711c.3905-.39053.3905-1.02369 0-1.41422l-6.364-6.363958c-.3905-.390524-1.0236-.390524-1.4142 0-.3905.390528-.3905 1.023688 0 1.414218l5.6569 5.65685-5.6569 5.6569c-.3905.3905-.3905 1.0236 0 1.4142.3906.3905 1.0237.3905 1.4142 0zm-32.7071.29289h32v-2h-32z"
-                fill="#f5f2ed" />
-            </svg>
-          </button>
+          <div class="reviews-pagination">
+            <button class="reviews-button reviews-button-prev" aria-label="Переключить на предыдущий слайд">
+              <svg height="16" viewBox="0 0 33 16" width="33" xmlns="http://www.w3.org/2000/svg">
+                <path d="m32.7071 8.70711c.3905-.39053.3905-1.02369 0-1.41422l-6.364-6.363958c-.3905-.390524-1.0236-.390524-1.4142 0-.3905.390528-.3905 1.023688 0 1.414218l5.6569 5.65685-5.6569 5.6569c-.3905.3905-.3905 1.0236 0 1.4142.3906.3905 1.0237.3905 1.4142 0zm-32.7071.29289h32v-2h-32z"
+                  fill="#f5f2ed" />
+              </svg>
+            </button>
+            <button class="reviews-button reviews-button-next" aria-label="Переключить на следующий слайд">
+              <svg height="16" viewBox="0 0 33 16" width="33" xmlns="http://www.w3.org/2000/svg">
+                <path d="m32.7071 8.70711c.3905-.39053.3905-1.02369 0-1.41422l-6.364-6.363958c-.3905-.390524-1.0236-.390524-1.4142 0-.3905.390528-.3905 1.023688 0 1.414218l5.6569 5.65685-5.6569 5.6569c-.3905.3905-.3905 1.0236 0 1.4142.3906.3905 1.0237.3905 1.4142 0zm-32.7071.29289h32v-2h-32z"
+                  fill="#f5f2ed" />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -252,7 +256,7 @@
         <div class="form">
           <h2 class="section-heading">Оставить заявку</h2>
           <p class="form-text">Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-          <form class="form-contacts" method="POST" action="#">
+          <form class="form-contacts" method="POST" action="https://echo.htmlacademy.ru">
             <p>
               <input class="text-input" type="text" id="name" name="name" required>
               <label class="input-label" for="name">Ваше имя</label>
