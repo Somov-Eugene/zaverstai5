@@ -73,7 +73,7 @@ a:focus {
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 26px 69px;
+  padding: 23px 66.125px;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -90,7 +90,7 @@ a:focus {
 
 .section-heading {
   margin-top: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   font-weight: 400;
   font-size: 40px;
   line-height: 50px;
@@ -106,21 +106,20 @@ a:focus {
 .page-header .container-wide {
   display: flex;
   align-items: center;
-  padding-top: 36px;
+  padding-top: 34px;
   padding-bottom: 46px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 83px;
+  margin-right: 89px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .nav-list {
   margin: 0;
-  margin-right: 42px;
   padding-left: 0;
   list-style-type: none;
   display: flex;
@@ -128,7 +127,7 @@ a:focus {
 }
 
 .nav-item {
-  margin-right: 23px;
+  margin-right: 28px;
 }
 
 .nav-item:last-child {
@@ -141,28 +140,31 @@ a:focus {
 }
 
 .page-header .phone {
+  margin-left: auto;
   font-size: 16px;
   line-height: 20px;
+  white-space: nowrap;
 }
 
 /* Стили для блока Promo */
 .promo {
-  padding-top: 150px;
-  padding-bottom: 167px;
   background-color: #e6e2d7;
   background-image: url("../img/bg-promo.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-size: 1400px 715px;
+  background-size: cover;
+  min-height: 715px;
 }
 
 .promo-text {
+  padding-top: 154px;
+  padding-bottom: 169px;
   width: 46%;
 }
 
 .main-heading {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 50px;
   line-height: 62px;
@@ -170,13 +172,13 @@ a:focus {
 
 .promo-description {
   margin-top: 0;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
 }
 
 /* Стили для блока About */
 .about {
-  padding-top: 65px;
-  padding-bottom: 20px;
+  padding-top: 67px;
+  padding-bottom: 21px;
 }
 
 .about-wrapper {
@@ -200,8 +202,8 @@ a:focus {
 
 /* Стили для блока Advantages */
 .advantages {
-  padding-top: 85px;
-  padding-bottom: 80px;
+  padding-top: 88px;
+  padding-bottom: 79px;
   color: #ffffff;
   background-color: #8d7370;
 }
@@ -238,8 +240,8 @@ a:focus {
 
 /* Стили для блока Works */
 .works {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 67px;
+  padding-bottom: 63px;
 }
 
 .works .section-heading {
@@ -272,14 +274,14 @@ a:focus {
 .works-img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 451px;
   object-fit: cover;
 }
 
 .works-hover {
   position: absolute;
   box-sizing: border-box;
-  padding-top: 86px;
+  padding-top: 88px;
   padding-right: 35px;
   padding-left: 35px;
   width: 100%;
@@ -297,7 +299,7 @@ a:focus {
 }
 
 .works-heading {
-  margin: 0 auto 15px;
+  margin: 0 auto 16px;
   max-width: 270px;
   font-weight: 500;
   font-size: 30px;
@@ -314,7 +316,7 @@ a:focus {
 
 .more-btn {
   display: block;
-  margin-top: 37px;
+  margin-top: 42px;
   font-weight: 500;
   font-size: 30px;
   line-height: 37px;
@@ -336,7 +338,7 @@ a:focus {
 /* Стили для блока Team */
 .team {
   padding-top: 50px;
-  padding-bottom: 57px;
+  padding-bottom: 59px;
   background-color: #e2c4ba;
 }
 
@@ -405,8 +407,8 @@ a:focus {
 
 /* Стили для блока Reviews */
 .reviews {
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 67px;
+  padding-bottom: 80px;
 }
 
 .reviews-pagination {
@@ -467,7 +469,7 @@ a:focus {
 
 .reviews-text p {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .reviews-text p:last-child {
@@ -497,7 +499,7 @@ a:focus {
   padding-top: 50px;
   padding-right: 20px;
   padding-bottom: 50px;
-  padding-left: 82px;
+  padding-left: 80px;
   background-color: #8d7370;
   color: #ffffff;
 }
@@ -522,7 +524,7 @@ a:focus {
   display: block;
   box-sizing:border-box;
   padding-top: 10px;
-  padding-bottom: 13px;
+  padding-bottom: 12px;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
@@ -552,7 +554,7 @@ a:focus {
 }
 
 .submit-button {
-  margin-top: 7px;
+  margin-top: 12px;
   color: #533738;
 }
 
@@ -566,22 +568,22 @@ a:focus {
 .page-footer .container-wide {
   display: flex;
   align-items: center;
-  padding-top: 37px;
-  padding-bottom: 37px;
+  padding-top: 20px;
+  padding-bottom: 36px;
 }
 
 .page-footer .phone {
   font-size: 18px;
   line-height: 30px;
+  white-space: nowrap;
 }
 
 .page-footer .address {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   margin-left: 42px;
-  margin-right: auto;
 }
 
 .page-footer .copyright {
   margin: 0;
+  margin-left: auto;
 }
